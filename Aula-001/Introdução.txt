@@ -1,0 +1,3 @@
+First Python class: personal development to enter the job market as a language developer, with a focus on Data Science and Artificial Intelligence.
+
+First lesson on learning the 'print' function and 'comments'.
