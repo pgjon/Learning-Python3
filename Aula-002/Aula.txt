@@ -1,0 +1,16 @@
+Toda variável em Python é um objeto. Sendo um objeto mais do que em variável
+
+Toda variável pode receber valores, e é atribuido esse valor a uma variável pelo sinal de ' = '
+
+Ex:
+    nome = 'Jones'
+    idade = 31
+    peso = 102.3
+
+
+função 'input' serve para receber um dado do usuário
+
+Ex:
+    nome = input('Qual seu nome?')
+    // foi criar uma variável chamada 'nome' junto a função 'input' para receber um dado do usuário
+    
