@@ -1,0 +1,16 @@
+tipos primitivos são o que caracterizam variáveis
+Ex:
+    numero = int(input('Digite um número inteiro: '))
+    'int' é o que denomina um valor inteiro para a variável 'numero'
+
+Existem 4 tipos primitivos mais básiccos em Python
+    int (integer)  = números inteiro
+    float          = números reais ou de ponto flutuante
+    bool (boolean) = valores lógicos ou buleanos 
+    str (strings)  = valores caracteres ou strings
+
+    Ex:
+        int     = 7, -4, 0, 9399
+        float   = 4.5, 0.076, -15.234, 7.0
+        bool    = True ou False
+        str     = 'Oi', 'Olá, mundo!', '7.5', ''
