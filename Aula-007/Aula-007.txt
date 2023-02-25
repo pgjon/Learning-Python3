@@ -1,0 +1,17 @@
+Operadores aritméticos
+
+    +  para Adição
+    -  para Subtração
+    *  para Multiplicalçao
+    /  para Divisão
+    ** para Potência
+    // para Divisão inteira
+    %  para Resto da Divisão
+    == para Sinal de igualdade
+
+    Ordem de Precedência
+
+    1 - ()
+    2 - ** 
+    3 - * / // %
+    4 - + -
