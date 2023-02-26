@@ -1,0 +1,30 @@
+Bibliotecas
+
+Supunha que tenha duas bibliotecas. Uma chamada: bebidas, contendo os seguintes
+itens: [café, suco, água, refrigerante, cerveja]. Outra chamada: comida
+com os itens: [churrasco, arroz, feijão, strogonoff, bife]
+
+Caso deseja-se usar a biblioteca inteira de bebidas ou dois ou mais itens,
+pode-se utilizar o comando abaixo:
+
+import bebidas (importa todas funcionalidades de um módulo)
+
+Agora, quando for utilizar apenas um item de uma biblioteca, 
+por exemplo, usar apenas o item 'churrasco' da biblioteca 'comida',
+utiliza-se algo parecido com o comando abaixo:
+
+from comida import churrasco (importa apenas item(ns) escolhidos de um módulo)
+* Serve para economizar memória
+
+Biblioteca math
+funcionalidades:
+    ceil -> arredonda um valor para cima.
+    floor -> arredonda um valor para baixo.
+    trunc -> trunca um valor, ou seja, elimina da vírgula para frente sem fazer arredondamento.
+    pow -> power (função de potência)
+    sqrt -> square root (raiz quadrada)
+    factorial - fatorial
+
+
+
+
