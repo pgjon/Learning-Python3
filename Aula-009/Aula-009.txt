@@ -1,0 +1,132 @@
+Cadeia de caracteres (cadeia de texto)
+
+'Curso em Vídeo Python' -> no português, se trata apenas de uma frase.
+Já para uma linguagem de programação, é chamado de cadeia de caracteres
+ou Strings ou apenas cadeia de texto.
+
+A cadeia de texto em python, é utilizada com aspas simples ' ou duplas "
+
+atribuição de uma frase a uma varialvel str:
+
+frase = 'Isso é uma frase'
+
+Fatiamento:
+significa pegar espaços de uma str
+
+na frase 'Isso é uma frase'
+fatiada fica: 'I  s  s  o     é     u  m  a     F  r  a  s  e '
+              '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15'
+a string possuí 16 índices ou caracteres
+
+se mandar escrever print(frase[7]), a letra 'u' será imprimida
+
+um outro exemplo: 
+print(frase[7:9])
+saída: 'um' # imprimiu os indices de 7 até 8, pois o 9 não
+             # entra na lista
+
+outro exemplo:
+print(frase[0:16:2])
+saída: 'Is  m rs' # imprimi a frase de 0 até 15 pulando de
+                  # dois em dois caracteres
+
+outro exemplo:
+print(frase[:4])
+saída: 'Isso' # começa no indice 0 e temrina no 4
+
+outro similar:
+print(frase[11:])
+saída: 'Frase' # começa no 11 e vai até o final da frase, pois
+               # não foi indicado onde terminaria. 
+
+Análise:
+
+Analisar uma string é saber algumas informações sobre ela:
+Qual tamanho; que letra começa; que letra termina; qual a 
+primeira palavra inteira etc.
+
+len(frase) # len vem de length, significa comprimento.
+saída: 16 # caracteres
+
+frase.count('a') # conta quantos caractes 'a' possuí na frase
+saída: 2
+
+outro ex.
+frase.count('s', 0, 3) # faz contagem do 's' com Fatiamento
+saída: 2
+
+frase.find('uma') # diz em que momento começou 'uma'
+saída: 7 # índice 7
+
+frase.find('texto')
+saída:  -1  # como a função não encontra a string 'texto' dentro
+            # de frase, a função retorna -1.
+
+'Isso' in frase 
+saída: True # pergunta se existe a string 'Isso' dentro da
+            # string frase
+
+Transformação:
+
+* Uma lista de string é imutável, ou seja, não há como mexer nela, mas
+é possível atravez de métodos.
+
+frase.replace('Frase', 'Framboesa')
+saída: 'Isso é uma Framboesa' # O método procura pela palavra 'Frase' e
+                              # substitui por 'Framboesa'. Não substitui
+                              # diretamente na str, e sim, em uma forma
+                              # secundária.
+
+frase.upper()
+saída: 'ISSO É UMA FRASE' # Eleva todos os caracteres em maiúsculas.
+
+frase.lower()
+saída: 'isso é uma frase' # Diminui todos os caracteres em minúsculas.
+
+frase.capitalize()
+saída: 'Isso é uma frase' # Joga todos caracteres para minúsculos, deixando
+                          # apenas o primeiro em maiúsculo.
+
+frase.title()
+saída: 'Isso É Uma Frase' # Eleva o primeiro caractere de cada palavra
+                          # dentro de uma str para maiúsculo.
+
+se ao inves da frase:  'I  s  s  o     é     u  m  a     F  r  a  s  e '
+                       '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15'
+
+fosse substituida por: '         U  m  a     F  r  a  s  e             '
+                       '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15'
+É possível reparar que há espaços vazio antes e depois da frase.
+Para resolver isso é fácil! Deve-se utilizar o método .strip()
+
+frase.strip()
+saída: 'U m a   F r a s e' # O espaço do meio é mantido, apenas é
+       '0 1 2 3 4 5 6 7 8' # removido os espaços dos extremos.
+
+frase.rstrip()
+saída:  '         U  m  a     F  r  a  s  e ' # Remove os espaços à direita
+        '00 01 02 03 04 05 06 07 08 09 10 11'
+
+frase.lstrip() 
+saída: 'U  m  a     F  r  a  s  e             ' # Remove os espaços à esquerda.
+       '03 04 05 06 07 08 09 10 11 12 13 14 15'
+
+Divisão:
+
+frase = 'I  s  s  o     é     u  m  a     F  r  a  s  e '
+        '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15'
+
+frase.split()
+saída: 'I  s  s  o ' 'é ' 'u  m  a ' 'F  r  a  s  e '
+       '00 01 02 03' '00' '00 01 02' '00 01 02 03 04'
+# Por padrão, onde estiver espaços em uma string, o método efetua uma Divisão
+# entre as Strings
+
+Junção:
+
+frase = 'I  s  s  o ' 'é ' 'u  m  a ' 'F  r  a  s  e '
+        '00 01 02 03' '00' '00 01 02' '00 01 02 03 04'
+
+'-'.join(frase)
+saída: 'I  s  s  o  -  é  -  u  m  a  -  F  r  a  s  e ' # Gera uma string única
+       '00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15' # com separador '-'
