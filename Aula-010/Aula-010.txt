@@ -1,0 +1,21 @@
+Estruturas Condicionais
+
+Ex.:
+Programa para informar se um carro está velho ou seminovo:
+
+tempo = int(input('Quantos anos tem seu carro? '))
+
+if tempo <= 5:
+    print('Seu carro está seminovo!')
+else:
+    print('Seu carro já é velho!')
+
+print('--FIM--')
+
+* Nunca irá acontecer uma situação na qual os dois blocos serão executados juntos
+
+de uma outra forma o mesmo Ex.
+
+tempo int(input('Quantos anos tem seu carro? '))
+print('Carro novo' if tempo <= 3 else'Carro velho')
+print('--FIM--')
