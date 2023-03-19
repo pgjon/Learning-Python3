@@ -1,0 +1,44 @@
+CORES NO TERMINAL
+
+padrão ANSI - escape sequence
+é um padrão de normalização internacional
+funciona em vários ambientes
+
+código ANSI para CORES
+o que funciona melhor para o Python é o 033
+Ex. \033[m
+
+Entre [ e m podem ter 2 ou 3 códigos
+         1º 2º 3º  
+Ex. \033[00;33;44m
+
+1º Style: código do comportamento ou do estilo
+    indica se fonte deve estar normal, negrito, sublinhada
+2º Text: código da cor do texto
+3º Back: background, cor da fundo
+
+Style:
+    0 - None
+    1 - Bold, negrito
+    4 - Underline, sublinhado
+    7 - Negative, inverte as configurações
+
+Text:
+    30 - Branco
+    31 - Vermelho
+    32 - Verde
+    33 - Amarelo
+    34 - Azul
+    35 - Magenta
+    36 - Ciano
+    37 - Cinza
+
+Back:
+    40 - Branco
+    41 - Vermelho
+    42 - Verde
+    43 - Amarelo
+    44 - Azul
+    45 - Magenta
+    46 - Ciano
+    47 - Cinza

@@ -1,0 +1,11 @@
+print('\033[0;30;41mTeste')
+print('\033[4;33;44mTeste\033[m')
+print('\033[1;35;43mTeste\033[m')
+print('\033[0;42mTeste\033[m')
+print('\033[mTeste\033[m')
+print('\033[7;37mTeste\033[m')
+
+print('Olá, Mundo!')
+print('\033[37mOlá, Mundo!')
+print('\033[1;31;43mOlá, Mundo!\033[m')
+print('\033[4;30;45mOlá, Mundo!\033[m')
